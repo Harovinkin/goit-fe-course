@@ -1,0 +1,271 @@
+/* general style */
+
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #555252;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+/* menu section */
+
+.logo {
+    float: left;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555252;
+}
+
+.logo::first-letter {
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.menu-list {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style:  none;
+}
+
+.menu-list li {
+    float: left;
+    margin: 0 16px;
+}
+
+.menu-list a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 32px;
+    color: #0f0101;
+    font-weight: bold;
+    
+}
+
+.menu-list li:first-child {
+    margin-left: 0;
+}
+
+.menu-list li:last-child {
+    margin-right: 0;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+    color: #1abc9c;
+}
+
+nav {
+    padding: 32px 0 94px;
+}
+
+/* featured product */
+
+.featured-title {
+    margin: 0 0 92px;
+    padding: 0;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.featured-title::after {
+    content: '';
+    display: block;
+    margin: 32px auto 0;
+    width: 164px;
+    height: 8px;
+    background-color: #1abc9c;
+}
+
+.product-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-list li {
+    float: left;
+    width: 255px;
+}
+
+.product-list li:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.product-list li:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 30px;
+}
+
+.product-list a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.product-list img {
+    width: 255px;
+    height: 282px;
+    background-color: #e8effc;
+}
+
+.product-list p {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.product-name {
+    display: inline-block;
+    background-color: #323232;
+    padding: 4px 0 4px 14px;
+    width: 200px;
+}
+
+.product-price {
+    float: right;
+    background-color: #8c8c8c;
+    padding: 4px 0 4px 12px;
+    width: 55px;
+}
+
+.product-list li:hover .product-name {
+    background-color: #1abc9c;
+}
+
+.product-list li:hover .product-price {
+    background-color: #7fd9c7;
+}
+
+.featured-prodacts {
+    margin-bottom: 98px;
+}
+
+/* news */
+
+.news-title {
+    margin: 0 0 81px;
+    padding: 0;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.news-title::after {
+    content: '';
+    display: block;
+    margin: 32px auto 0;
+    width: 164px;
+    height: 8px;
+    background-color: #1abc9c;
+}
+
+.news-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-list li {
+
+    float: left;
+    width: 350px;
+}
+
+.news-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.news-list img {
+    margin-bottom: 14px;
+}
+
+.news-list h3,
+.news-list p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news-list h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.news-list h3::after {
+    content: '';
+    display: block;
+    margin: 12px 0 26px;
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+}
+
+.news-list p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: 0 0 13px;
+}
+
+.news-list button {
+    display: block;
+    width: 160px;
+    /* height: 50px; */
+    margin: 0;
+    padding: 14px 40px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #4ec6ab;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.news {
+    margin-bottom: 80px;
+}
