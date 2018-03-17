@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .list {
+      text-align: center;
+  }
+
+  div {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  li {
+    list-style: none;      
+  }
+  
+
+/* MENU */
+  
+.conteiner {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+nav {
+    line-height: 150px;
+    border-bottom: 3px solid #000;
+
+}
+  
+.nav-list {
+    margin: auto;
+    font-family: Roboto, sans-serif;
+    height: auto;
+    overflow: hidden;
+  }
+  
+.nav-list li {
+    float: left;
+    
+  }
+  
+.nav-list a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 30px;
+    font-weight: 700;
+  }
+
+.nav-list a:hover {
+    color: rgb(69, 77, 199);
+}
+
+.nav-list a:focus {
+    color: rgb(206, 21, 21);
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  /* alternating colored list */
+
+.colored-list {
+    margin-bottom: 100px;
+}
+
+.colored-list il {
+    color: #0E1116;
+}
+
+.colored-list li:nth-child(3n+1) {
+    background-color: #88292F;
+}
+
+.colored-list li:nth-child(3n-1) {
+    background-color: #5DB7DE;
+}
+
+.colored-list li:nth-child(3n-9) {
+    background-color: #0D5D56;
+}
+
+/* list with arrows */
+
+.arrow-list a {
+    text-decoration: none;
+}
+
+.arrow-list a::before {
+    content: '\2192';
+    margin-right: 10px;
+}
+
+/* countered-list */
+
+.countered-list {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #000;
+    counter-reset: v;
+}
+
+.countered-list li {
+    counter-increment: v;
+}
+
+.countered-list li::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    background-color: rgb(20, 220, 235);
+    content: counter(v, lower-roman);
+}

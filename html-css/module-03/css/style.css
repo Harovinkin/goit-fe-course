@@ -79,6 +79,7 @@ img {
     width: 420px;
     margin-right: 60px;
     margin-bottom: 130px;
+    padding: 15px;
 }
 
 .list-item:nth-child(2n) {
@@ -117,6 +118,10 @@ img {
     vertical-align: top;
 }
 
+.list-item:hover img {
+    filter: grayscale(0);
+}
+
 /* button more */
 
 .articles {
@@ -133,4 +138,5 @@ img {
     padding: 0;
     width: 164px;
     height: 60px;
+    cursor: pointer;
 }
