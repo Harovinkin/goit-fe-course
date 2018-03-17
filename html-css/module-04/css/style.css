@@ -262,10 +262,11 @@ nav {
     color: #ffffff;
     background-color: #4ec6ab;
     border-radius: 3px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
     border: none;
     cursor: pointer;
 }
 
 .news {
     margin-bottom: 80px;
-}
+} 
