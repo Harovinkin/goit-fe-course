@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://blender3d.com.ua/wp-content/uploads/2013/07/stone3.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  margin-bottom: 150px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* task-1 */
+
+.image-linear-gradient {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(51, 51, 51, .3),   
+    rgba(221, 24, 24, .3)
+    ),
+  linear-gradient(
+    to bottom, 
+    rgba(243, 143, 115, .3),
+    rgba(247, 183, 51, .3)
+    ), 
+    url(https://images.pexels.com/photos/2340/sea-man-person-surfer.jpg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb);
+  }
+
+/* task-2 */
+
+.colored-cube {
+  text-align: center;
+  padding: 232px 0;
+  background-image: 
+  linear-gradient(
+    to top right, 
+    #23074d,
+    #cc5333
+    );
+}
+
+.color-list {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  list-style: none;
+  background-color: #424242;
+}
+
+.color-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.color-box:nth-child(1) {
+  background-color: #2EA2F3;
+}
+
+.color-box:nth-child(2) {
+  background-color: #199586;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.color-box:nth-child(3) {
+  background-color: #E62365;
+  right: 0;
+}
+
+.color-box:nth-child(4) {
+  background-color: #F1483D;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.color-box:nth-child(5) {
+  background-color: #FC5B2D;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color-box:nth-child(6) {
+  background-color: #9B12AE;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.color-box:nth-child(7) {
+  background-color: #4DB051;
+  bottom: 0;
+}
+
+.color-box:nth-child(8) {
+  background-color: #FCEF41;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.color-box:nth-child(9) {
+  background-color: #398EF2;
+  right: 0;
+  bottom: 0;
+}
+
+/* drop list */
+
+.drop-list {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(53, 92, 125, .8),
+    rgba(108, 91, 123, .8),
+    rgba(192, 108, 132, .8)
+    ),
+    url(https://www.look.com.ua/large/201209/16893.jpg);
+    margin-bottom: 0px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.menu {
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.menu-item {
+  position: relative;
+  float: left;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.menu-item > a,
+.submenu-item > a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #000;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.menu-item > a:hover,
+.submenu-item > a:hover {
+  background-color: #C06C84;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.submenu-item {
+  white-space: nowrap;
+}
