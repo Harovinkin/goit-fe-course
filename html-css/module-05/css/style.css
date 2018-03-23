@@ -1,0 +1,189 @@
+/* general syle */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* outline: 1px solid red; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* menu */
+
+nav {
+  padding: 32px 0 26px;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #555252;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c ;
+}
+
+.menu {
+  float: right;
+  margin: 9px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+float: left;
+padding: 0 15px;
+}
+
+.menu li:first-child{
+  padding-left: 0;
+}
+.menu li:last-child {
+  padding-right: 0;
+}
+
+.menu-item a {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  color: #0f0101;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: #1abc9c;
+}
+
+/* slider */
+
+
+
+/* new-collection */
+
+.main-title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 900;
+  color: #515151;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-title::after {
+  content: '';
+  display: block;
+  margin: 26px auto 80px;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+}
+
+.collection {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.collection-item {
+  float: left;
+}
+
+.collection-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.item-link p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.item-name {
+  float: left;
+  background-color: #323232;
+  width: 201px;
+  padding: 4px 14px;
+}
+
+.item-prise {
+  float: right;
+  background-color: #8c8c8c;
+  width: 54px;
+  padding: 4px 12px;
+}
+
+.icon-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icon-list a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(255, 255, 255);
+}
