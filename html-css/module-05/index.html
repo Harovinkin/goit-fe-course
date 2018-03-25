@@ -12,9 +12,9 @@
 </head>
 
 <body>
-  <header class="wrapper">
-    <nav>
-      <a href="" class="logo">Mart</a>
+  <header class="header">
+    <nav class="nav-section wrapper">
+      <a href="#" class="logo">Mart</a>
       <ul class="menu clearfix">
         <li class="menu-item">
           <a href="#">Home</a>
@@ -40,57 +40,62 @@
 
   <div class="slider"></div>
 
-  <main class="new-collection wrapper">
-    <h2 class="main-title">New Collection</h2>
-    <ul class="collection clearfix">
-      <li class="collection-item">
-        <a class="item-link clearfix" href="#">
-          <img src="img/collection_1.jpg" alt="Blue Tshirt" width="255" height="322">
-          <p class="item-name">Blue Tshirt</p>
-          <p class="item-prise">$26</p>
-        </a>
-        <div class="icons-choice">
-          <ul class="icon-list">
-            <li class="icon-like icon">
-              <a href="#"></a>
-            </li>
-            <li class="icon-compare icon">
-              <a href="#"></a>
-            </li>
-            <li class="icon-clock icon">
-              <a href="#"></a>
-            </li>
-            <li class="icon-add icon">
-              <a href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="collection-item">
-        <a class="item-link" href="#">
-          <img src="img/collection_2.jpg" alt="Woman Shirt" width="255" height="322">
-          <p class="item-name">Woman Shirt</p>
-          <p class="item-prise">$31</p>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a class="item-link" href="#">
-          <img src="img/collection_3.jpg" alt="Yelloy Tshirt" width="255" height="322">
-          <p class="item-name">Yelloy Tshirt</p>
-          <p class="item-prise">$21</p>
-        </a>
-      </li>
-      <li class="collection-item">
-        <a class="item-link" href="#">
-          <img src="img/collection_4.jpg" alt="Cool lingerie" width="255" height="322">
-          <p class="item-name">Cool lingerie</p>
-          <p class="item-prise">$56</p>
-        </a>
-      </li>
-    </ul>
+  <main class="new-collection">
+    <div class="wrapper">
+      <h2 class="main-title">New Collection</h2>
+      <ul class="collection clearfix">
+        <li class="collection-item">
+          <a class="item-link" href="#">
+            <img src="img/collection_1.jpg" alt="Blue Tshirt" width="255" height="322">
+            <p class="item-name">Blue Tshirt</p>
+            <p class="item-price">$26</p>
+          </a>
+          <div class="overlay">
+            <ul class="overlay-list clearfix">
+              <li>
+                <button class="icon-like button"><span class="visually-hidden">Like</span></button>
+              </li>
+              <li>
+                <button class="icon-compare button"><span class="visually-hidden">Compare</span></button>
+              </li>
+              <li>
+                <button class="icon-clock button"><span class="visually-hidden">Clock</span></button>
+              </li>
+              <li>
+                <button class="icon-trolley"><span class="add-to-cart">Add to cart</span></button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="collection-item">
+          <a class="item-link" href="#">
+            <img src="img/collection_2.jpg" alt="Woman Shirt" width="255" height="322">
+            <p class="item-name">Woman Shirt</p>
+            <p class="item-price">$31</p>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a class="item-link" href="#">
+            <img src="img/collection_3.jpg" alt="Yelloy Tshirt" width="255" height="322">
+            <p class="item-name">Yelloy Tshirt</p>
+            <p class="item-price">$21</p>
+          </a>
+        </li>
+        <li class="collection-item">
+          <a class="item-link" href="#">
+            <img src="img/collection_4.jpg" alt="Cool lingerie" width="255" height="322">
+            <p class="item-name">Cool lingerie</p>
+            <p class="item-price">$56</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </main>
 
-  <footer class="wrapper"></footer>
+  <footer class="footer clearfix">
+    <p>All Rights Reserved © Dokan | Designed ThemenGraph</p>
+  </footer>
 </body>
 
 </html>

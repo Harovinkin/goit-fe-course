@@ -46,14 +46,18 @@ body {
 }
 
 .wrapper {
-  width: 1110px;
+  width: 1170px;
   margin: 0 auto;
 }
 
 /* menu */
 
-nav {
-  padding: 32px 0 26px;
+.header {
+  width: 100%;
+}
+
+.nav-section {
+  padding: 32px 30px 26px;
 }
 
 .logo {
@@ -113,6 +117,11 @@ padding: 0 15px;
 
 /* new-collection */
 
+.new-collection {
+  width: 100%;
+  background-color: #e9f0fd;
+}
+
 .main-title {
   font-size: 48px;
   line-height: 48px;
@@ -120,14 +129,14 @@ padding: 0 15px;
   color: #515151;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 0 80px;
   padding: 0;
 }
 
 .main-title::after {
   content: '';
   display: block;
-  margin: 26px auto 80px;
+  margin: 26px auto 0;
   width: 164px;
   height: 7px;
   background-color: #1abc9c;
@@ -135,11 +144,12 @@ padding: 0 15px;
 
 .collection {
   margin: 0;
-  padding: 0;
+  padding: 0 30px;
   list-style: none;
 }
 
 .collection-item {
+  position: relative;
   float: left;
 }
 
@@ -148,42 +158,118 @@ padding: 0 15px;
 }
 
 .item-link {
-  position: relative;
   display: block;
   text-decoration: none;
 }
 
 .item-link p {
+  position: absolute;
   margin: 0;
   font-size: 18px;
   line-height: 32px;
   font-weight: 900;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 .item-name {
-  float: left;
+  left: 0;
+  bottom: 0;
   background-color: #323232;
   width: 201px;
   padding: 4px 14px;
 }
 
-.item-prise {
-  float: right;
+.item-price {
+  right: 0;
+  bottom: 0;
   background-color: #8c8c8c;
   width: 54px;
   padding: 4px 12px;
 }
 
-.icon-list {
+/* overlay */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 255px;
+  height: 282px;
+  border: 10px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.549;
+}
+
+.collection-item:hover .overlay {
+  opacity: 0.549;
+}
+
+.collection-item:hover .item-name {
+  background-color: #1abc9c;
+}
+
+
+.collection-item:hover .item-price {
+  background-color: #7fd9c7;
+}
+
+.overlay-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.icon-list a {
-  display: inline-block;
+.button {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.overlay-list .button {
+  float: left;
   width: 50px;
   height: 50px;
   border: 1px solid rgb(255, 255, 255);
+}
+
+.icon-trolley {
+  display: block;
+  width: 166px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  text-align: left;
+}
+
+.icon-trolley::before {
+  content:"";
+  display: inline-block;
+  width: 28px;
+  height: 27px;
+  background-image: url(../img/icons/trolley.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.add-to-cart {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+ 
+
+/* footer */
+
+.footer {
+  background-color: #323232;
 }
