@@ -1,0 +1,74 @@
+/* general */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+/* task-01 */
+
+.galery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+  linear-gradient(
+    to left bottom,
+    #ff7e5f,
+    #feb47b);
+}
+
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px;
+  width: 700px;
+  background: 
+    linear-gradient(
+    to bottom,
+    #000000,
+    #434343);
+  list-style: none;
+}
+
+.galery-image {
+  width: 200px;
+  height: 200px;
+}
+
+.galery-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 20px;
+}
+
+/* social cart */
+
+.social-card {
+  background: 
+  linear-gradient(
+  to right,
+  #4CB8C4,
+  #3CD3AD);
+}
