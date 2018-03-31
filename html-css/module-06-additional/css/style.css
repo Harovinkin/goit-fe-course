@@ -18,6 +18,7 @@ img {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -66,9 +67,70 @@ body {
 /* social cart */
 
 .social-card {
-  background: 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: 
   linear-gradient(
   to right,
   #4CB8C4,
-  #3CD3AD);
+  #3CD3AD); */
+}
+.social-card-item {
+  width: 348px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px;
+}
+
+.social-card-item:hover {
+  box-shadow: 0 0 15px;
+}
+
+
+.card-item-image {
+  margin-bottom: 20px;
+  transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.card-item-image:hover,
+.card-item-image:focus {
+  transform: rotate(5deg);
+}
+
+.social-card-name {
+  margin: 0 0 20px;
+  font-size: 28px;
+  transition: transform 0.2s, color 0.3s;
+}
+
+
+.social-card-name:hover,
+.social-card-name:focus  {
+  transform: scale(1.15);
+  color: #D96F92;
+}
+
+
+.social-card-duscription {
+  margin: 0 0 20px;
+}
+
+.social-card-button {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 10px;
+  min-width: 100px;
+  border: none;
+  background: #444444;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: width, background-color, 0.2s;
+}
+
+.social-card-button:hover {
+  min-width: 100%;
+  background-color: #D96F92;
 }
