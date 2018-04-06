@@ -12,7 +12,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  /* outline: 1px solid green; */
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -51,6 +50,7 @@ body {
   margin: 0 auto;
 }
 
+
 /* site-logo */
 
 .logo {
@@ -69,6 +69,7 @@ body {
   text-transform: uppercase;
 }
 
+
 /* site-menu */
 
 .navigation-list {
@@ -80,11 +81,6 @@ body {
   width: 490px;
   list-style: none;
 }
-
-.section-services {
-  flex:0 0 auto;
-}
-
 
 .navigation-link {
   position: relative;
@@ -122,17 +118,17 @@ body {
   width: 100%;
 }
 
-
 .site-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 78px;
+  min-height: 88px;
 }
 
 .header {
-  margin-bottom: 98px;
+  margin-bottom: 86px;
 }
+
 
 /* main-servises */
 
@@ -144,7 +140,7 @@ body {
 }
 
 .servises-title {
-  margin: 0 0 60px;
+  margin: 0 0 62px;
   padding: 0;
   font-size: 30px;
   font-weight: 700;
@@ -247,12 +243,8 @@ body {
   margin-bottom: 90px;
 }
 
-/* main-team */
 
-.team-card-item {
-  position: relative;
-  flex: none;
-}
+/* main-team */
 
 .team-pre-title {
   margin: 0 0 12px;
@@ -297,28 +289,22 @@ body {
   list-style: none;
 }
 
-.card-image-wrapper {
-  margin-bottom: 28px;
-  transition: box-shadow 200ms linear;
-}
-
-.team-card-item:hover .card-image-wrapper {
-  /* box-shadow:  inset -10px -10px 0 rgba(149, 225, 211); */
+.team-card-item {
+  position: relative;
+  flex: none;
 }
 
 .card-image {
   position: relative;
   left: 0;
   top: 0;
-  /* box-shadow: 0 0 0 rgba(149, 225, 211); */
+  margin-bottom: 28px;
   transition: 
     left 200ms linear,
-    /* box-shadow 200ms linear, */
     top 200ms linear;
 }
 
 .team-card-item:hover .card-image {
-  /* box-shadow: 10px 10px 0 rgba(149, 225, 211); */
   left: -10px;
   top: -10px;
 }
@@ -343,6 +329,7 @@ body {
 .section-team {
   margin-bottom: 82px;
 }
+
 
 /* team-overlay */
 
@@ -374,6 +361,7 @@ body {
   box-shadow: 10px 10px 0 rgba(149, 225, 211);
   opacity: 1;
 }
+
 
 /* card-socials */
 
@@ -468,6 +456,3 @@ input[type="submit"] {
   line-height: 1.2;
   cursor: pointer;
 }
-
-
-
