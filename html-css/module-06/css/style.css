@@ -118,6 +118,10 @@ body {
   width: 100%;
 }
 
+.active-page-link {
+  top: 5px;
+}
+
 .site-navigation {
   display: flex;
   align-items: center;
