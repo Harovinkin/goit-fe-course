@@ -439,7 +439,12 @@ input[type="email"] {
   border-right: none;
   width: 234px;
   height: 40px;
-  }
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.2;
+  text-indent: 12px;
+}
 
 input[type="email"]::placeholder {
   font-family: "Roboto";
@@ -447,7 +452,7 @@ input[type="email"]::placeholder {
   font-style: italic;
   line-height: 1.2;
   text-indent: 12px;
-  }
+}
   
 .button-subscribe {
   margin: 0;
