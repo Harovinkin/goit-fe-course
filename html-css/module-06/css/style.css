@@ -446,7 +446,7 @@ input[type="email"] {
   text-indent: 12px;
   }
   
-input[type="submit"] {
+.button-subscribe {
   margin: 0;
   padding: 0;
   width: 150px;
