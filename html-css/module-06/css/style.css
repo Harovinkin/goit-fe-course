@@ -439,6 +439,9 @@ input[type="email"] {
   border-right: none;
   width: 234px;
   height: 40px;
+  }
+
+input[type="email"]::placeholder {
   font-family: "Roboto";
   font-size: 15px;
   font-style: italic;
