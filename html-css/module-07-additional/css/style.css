@@ -1,0 +1,46 @@
+/* general */
+
+root: {
+  --table-color: #414141;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* table */
+
+.table {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--table-color);
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table-title {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+th, td {
+  border: 2px solid #414141;
+  padding: 10px 15px;
+}
+
+th {
+  font-size: 18px;
+  background-color: #414141;
+  color: #ffffff;
+}
+
+td:first-of-type {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* google map */
+
