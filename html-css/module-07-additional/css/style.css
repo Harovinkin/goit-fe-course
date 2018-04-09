@@ -6,24 +6,38 @@ root: {
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
+.body {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
   max-width: 1170px;
+  height: 100vh;
   margin: 0 auto;
 }
 
 /* table */
 
+.section-table {
+  background-color: rgba(25, 101, 214, 0.589);
+}
+
 .table {
+  margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
   color: var(--table-color);
   text-align: center;
-  margin: auto;
   border-collapse: collapse;
 }
 
 .table-title {
+  padding: 0;
+  margin: 0 0 15px;
   font-size: 25px;
-  margin-bottom: 15px;
 }
 
 th, td {
@@ -43,4 +57,14 @@ td:first-of-type {
 }
 
 /* google map */
+
+.google-map {
+  margin: auto;
+  padding: 3px;
+  background-color: rgb(184, 93, 93);
+}
+
+.section-map {
+  background-color: rgb(36, 192, 184);
+}
 
