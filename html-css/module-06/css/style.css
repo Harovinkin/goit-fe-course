@@ -330,10 +330,6 @@ body {
   text-align: center;
 }
 
-.section-team {
-  margin-bottom: 82px;
-}
-
 
 /* team-overlay */
 
@@ -405,6 +401,10 @@ body {
 
 .icon-instagram {
   background-image: url('../image/icon/social/instagram.png');
+}
+
+.section-main {
+  margin-bottom: 82px;
 }
 
 
