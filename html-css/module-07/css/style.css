@@ -1,0 +1,361 @@
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+       url('../fonts/montserrat-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-italic - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+       url('../fonts/noto-serif-v6-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-serif-v6-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* genetal */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
+/* header */
+
+.header {
+  margin-bottom: 62px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+}
+
+
+/* logo */
+
+.logo-link {
+  display: block;
+}
+
+
+/* cite-menu */
+
+.cite-menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #fed136;
+}
+
+
+/* main-servises */
+
+.servise {
+margin-bottom: 119px;
+}
+
+.servises-title {
+  margin: 0 0 7px;
+  font-size: 40px;
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.servises-subtitle {
+  margin: 0 0 76px;
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+  text-align: center;
+}
+
+.servise-item {
+  flex: 0 0 290px;
+}
+
+.servise-item-link-wrapper {
+  display: block;
+  text-align: center;
+  width: 290px;
+  text-decoration: none;
+}
+
+.servise-item-link-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 72px;
+  height: 71px;
+  margin-bottom: 19px;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-basket::before {
+  background-image: url('../image/service-icons/basket.png');
+}
+
+.icon-laptop::before {
+  background-image: url('../image/service-icons/laptop.png');
+}
+
+.icon-locked::before {
+  background-image: url('../image/service-icons/locked.png');
+}
+
+.servises-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.servise-item-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  text-align: center;
+}
+
+.servise-item-about {
+  margin: 0;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(119, 119, 119);
+  text-align: center;
+}
+
+
+/* main-contact-us */
+
+.section-contact {
+  position: relative;
+  background-color: #222222;
+  width: 100%;
+}
+
+.contact-wrapper {
+  min-height: 677px;
+  padding-top: 102px;
+  text-align: center;
+}
+
+.contact-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+  width: 614px;
+  height: 537px;
+  background-image: url('../image/map_background.png');
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-title {
+  margin: 0 0 10px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-subtitle {
+  margin: 0 0 76px;
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+}
+
+/* .input-aria-wrapper {
+  display: flex;
+  margin-bottom: 28px;
+} */
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 212px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  line-height: 1.2;
+  text-indent: 22px;
+}
+
+.form input {
+  width: 456px;
+  height: 52px;
+}
+
+.form textarea {
+  display: block;
+  width: 456px;
+  height: 212px;
+  padding: 17px 0;
+  resize: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-indent: 22px;
+}
+
+.form input[name='user_name']:invalid,
+.form input[name='user_email']:invalid,
+.form textarea:invalid {
+  outline: 1px solid red;
+}
+
+.form input[name='user_name']:valid,
+.form input[name='user_email']:valid,
+.form textarea:valid {
+  outline: 1px solid green;
+}
+
+.form-list li:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 28px;
+}
+
+.form-list li:not(:last-child) {
+  margin-right: 28px;
+}
+
+.form-button-send {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 66px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  cursor: pointer;
+}
