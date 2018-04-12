@@ -241,7 +241,7 @@ margin-bottom: 119px;
   text-align: center;
 }
 
-.contact-wrapper::after {
+.section-contact::after {
   content: '';
   position: absolute;
   right: 0;
@@ -272,11 +272,6 @@ margin-bottom: 119px;
   color: rgb(119, 119, 119);
 }
 
-/* .input-aria-wrapper {
-  display: flex;
-  margin-bottom: 28px;
-} */
-
 .form-list {
   display: flex;
   flex-direction: column;
@@ -294,7 +289,6 @@ margin-bottom: 119px;
   padding: 0;
   cursor: pointer;
   font-size: 14px;
-  font-family: "Montserrat";
   color: rgb(187, 187, 187);
   font-weight: bold;
   line-height: 1.2;
@@ -317,7 +311,6 @@ margin-bottom: 119px;
 .form input::placeholder,
 .form textarea::placeholder {
   font-size: 14px;
-  font-family: "Montserrat";
   color: rgb(187, 187, 187);
   font-weight: bold;
   text-transform: uppercase;
@@ -328,13 +321,13 @@ margin-bottom: 119px;
 .form input[name='user_name']:invalid,
 .form input[name='user_email']:invalid,
 .form textarea:invalid {
-  outline: 1px solid red;
+  outline-color: rgb(255, 31, 31);
 }
 
 .form input[name='user_name']:valid,
 .form input[name='user_email']:valid,
 .form textarea:valid {
-  outline: 1px solid green;
+  outline-color: rgb(2, 235, 2);
 }
 
 .form-list li:not(:nth-last-child(-n + 2)) {
@@ -345,9 +338,10 @@ margin-bottom: 119px;
   margin-right: 28px;
 }
 
-.form-button-send {
+.button-form-send {
   display: block;
   margin: 0 auto;
+  padding: 0;
   width: 240px;
   height: 66px;
   font-size: 18px;
