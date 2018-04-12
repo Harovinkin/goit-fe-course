@@ -251,7 +251,7 @@ margin-bottom: 119px;
   background-image: url('../image/map_background.png');
 }
 
-.form {
+.user-form-messege {
   position: relative;
   z-index: 1;
 }
@@ -272,7 +272,7 @@ margin-bottom: 119px;
   color: rgb(119, 119, 119);
 }
 
-.form-list {
+.user-form-list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -282,8 +282,8 @@ margin-bottom: 119px;
   list-style: none;
 }
 
-.form input,
-.form textarea {
+.user-form-messege input,
+.user-form-messege textarea {
   border: 1px solid rgb(204, 204, 204);
   border-radius: 2px;
   padding: 0;
@@ -295,12 +295,12 @@ margin-bottom: 119px;
   text-indent: 22px;
 }
 
-.form input {
+.user-form-messege input {
   width: 456px;
   height: 52px;
 }
 
-.form textarea {
+.user-form-messege textarea {
   display: block;
   width: 456px;
   height: 212px;
@@ -308,8 +308,8 @@ margin-bottom: 119px;
   resize: none;
 }
 
-.form input::placeholder,
-.form textarea::placeholder {
+.user-form-messege input::placeholder,
+.user-form-messege textarea::placeholder {
   font-size: 14px;
   color: rgb(187, 187, 187);
   font-weight: bold;
@@ -318,23 +318,23 @@ margin-bottom: 119px;
   text-indent: 22px;
 }
 
-.form input[name='user_name']:invalid,
-.form input[name='user_email']:invalid,
-.form textarea:invalid {
+.user-form-messege input[name='user_name']:invalid,
+.user-form-messege input[name='user_email']:invalid,
+.user-form-messege textarea:invalid {
   outline-color: rgb(255, 31, 31);
 }
 
-.form input[name='user_name']:valid,
-.form input[name='user_email']:valid,
-.form textarea:valid {
+.user-form-messege input[name='user_name']:valid,
+.user-form-messege input[name='user_email']:valid,
+.user-form-messege textarea:valid {
   outline-color: rgb(2, 235, 2);
 }
 
-.form-list li:not(:nth-last-child(-n + 2)) {
+.user-form-list li:not(:nth-last-child(-n + 2)) {
   margin-bottom: 28px;
 }
 
-.form-list li:not(:last-child) {
+.user-form-list li:not(:last-child) {
   margin-right: 28px;
 }
 
