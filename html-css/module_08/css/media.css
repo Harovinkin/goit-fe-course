@@ -1,0 +1,178 @@
+@media (max-width: 767px) {
+
+  .container {
+    width: 320px;
+  }
+
+  .background-banner {
+    width: 320px;
+    height: 540px;
+    padding-top: 16px;
+    background-image: url('../image/banner-tel.jpg');
+  }
+
+
+  /* HEADER */
+
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 26px;
+  }
+  
+  .log-in-button,
+  .sign-up-button {
+    margin-bottom: 112px;
+  }
+
+
+  /* BANNER-PROMO-CONTENT */
+
+  .promo-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .promo-subtitle {
+    width: 222px;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  
+  .find-partners-button {
+    width: 280px;
+  }
+
+  .meet-partner-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+
+  /* MAIN-MEET-PARTNERS */
+
+  .meet-partners-section {
+    padding-bottom: 58px;
+  }
+
+  .meet-partners-title {
+    margin-bottom: 14px;
+  }  
+
+  .meet-partner-link {
+    padding: 0 54px;
+  }
+
+  .see-other-button {
+    width: 284px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .background-banner {
+    height: 700px;
+    padding-top: 28px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+  }
+
+  .promo-title {
+    width: 532px;
+    margin-bottom: 25px;
+    font-size: 52px;
+  }
+
+  .promo-subtitle {
+    margin-bottom: 38px;
+    font-size: 24px; 
+  }
+
+  .meet-partners-title {
+    margin-bottom: 34px;
+  }
+
+  .meet-partners-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .meet-partner-link {
+    padding: 0;
+  }
+
+  .find-partners-button {
+    width: 226px;
+  }
+
+  .see-other-button {
+    width: 192px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1169px) {
+
+  .container {
+    width: 748px;
+    padding: 0 40px;
+  }
+
+  .background-banner {
+    width: 768px;
+    background-image: url('../image/banner-tablet.jpg');
+  }
+
+  .meet-partners-section {
+    padding-bottom: 40px;
+  }
+
+  .meet-partners-list {
+    width: 492px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .meet-partner-item {
+    flex: 0 0 236px;
+  }
+
+  .meet-partner-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .meet-partner-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 28px;
+  }
+}
+
+
+@media (min-width: 1170px) {
+
+  .container {
+    max-width: 940px;
+  }
+
+  .background-banner {
+    width: 100%;
+    height: 700px;
+    background-image: url('../image/banner-desktop.jpg');
+  }
+
+  .meet-partners-section {
+    padding-bottom: 74px;
+  }
+
+  .meet-partner-item {
+    flex: 0 0 220px;
+  }
+}
+
