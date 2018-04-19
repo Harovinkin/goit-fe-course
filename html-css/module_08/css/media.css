@@ -6,7 +6,7 @@
 
   .background-banner {
     width: 320px;
-    height: 540px;
+    min-height: 540px;
     padding-top: 16px;
     background-image: url('../image/banner-tel.jpg');
   }
@@ -15,13 +15,11 @@
   /* HEADER */
 
   .header {
-    display: flex;
     flex-direction: column-reverse;
     margin-bottom: 26px;
   }
   
-  .log-in-button,
-  .sign-up-button {
+  .buttons-wrapper {
     margin-bottom: 112px;
   }
 
@@ -34,7 +32,7 @@
   }
 
   .promo-subtitle {
-    width: 222px;
+    max-width: 222px;
     margin-bottom: 16px;
     font-size: 18px;
   }
@@ -71,14 +69,12 @@
 @media (min-width: 768px) {
 
   .background-banner {
-    height: 700px;
+    min-height: 700px;
     padding-top: 28px;
   }
 
   .header {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 140px;
   }
 
@@ -163,7 +159,6 @@
 
   .background-banner {
     width: 100%;
-    height: 700px;
     background-image: url('../image/banner-desktop.jpg');
   }
 
@@ -173,6 +168,10 @@
 
   .meet-partner-item {
     flex: 0 0 220px;
+  }
+
+  .meet-partner-item:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 28px;
   }
 }
 
