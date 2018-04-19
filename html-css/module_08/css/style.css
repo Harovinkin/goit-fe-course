@@ -260,6 +260,7 @@ body {
 .see-other-button {
   border-color: rgb(255, 78, 80);
   background-color: transparent;
+  font-weight: 700;
   color: rgb(255, 78, 80);
   cursor: pointer;
 }
