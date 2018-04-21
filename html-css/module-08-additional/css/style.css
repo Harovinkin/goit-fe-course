@@ -1,0 +1,72 @@
+
+/* TASK-1 */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.header,
+footer {
+  flex-grow: 1;
+}
+
+.header,
+.main {
+  margin-bottom: 20px;
+}
+
+.header {
+  background-color: #EFED0A;
+}
+
+.main {
+  display: flex;
+  flex-grow: 4;
+}
+
+.article,
+.middle-section {
+  margin-right: 2.09%;
+}
+
+.middle-section,
+.asside {
+  width: 20.83%;
+}
+
+.article {
+  width: 54.16%;
+  background-color: #01AEF0;
+}
+
+.middle-section {
+  background-color: #A8A9AD;
+}
+
+.asside {
+  background-color: #E6592F;
+}
+
+.footer {
+  background-color: #0E9B56;
+}
+
+/* TASK-2 */
+
+.different-pictures {
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.picture {
+  display: block;
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
