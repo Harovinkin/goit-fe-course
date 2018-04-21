@@ -7,7 +7,7 @@
 
   .background-banner {
     width: 320px;
-    height: 540px;
+    min-height: 540px;
     padding-top: 16px;
     background-image: url('../image/banner-tel.jpg');
   }
@@ -70,7 +70,7 @@
 @media (min-width: 768px) {
 
   .background-banner {
-    height: 700px;
+    min-height: 700px;
     padding-top: 28px;
   }
 
