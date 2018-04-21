@@ -88,6 +88,7 @@ body {
 
 .background-banner {
   margin: 0 auto;
+  width: 100%;
   margin-bottom: 68px;
   text-align: center;
   background-repeat: no-repeat;

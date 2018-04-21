@@ -6,7 +6,6 @@
   }
 
   .background-banner {
-    width: 320px;
     min-height: 540px;
     padding-top: 16px;
     background-image: url('../image/banner-tel.jpg');
@@ -121,7 +120,6 @@
   }
 
   .background-banner {
-    width: 768px;
     background-image: url('../image/banner-tablet.jpg');
   }
 
@@ -164,7 +162,6 @@
   }
 
   .background-banner {
-    width: 100%;
     background-image: url('../image/banner-desktop.jpg');
   }
 
