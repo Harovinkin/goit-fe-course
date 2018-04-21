@@ -118,12 +118,17 @@
 
   .container {
     width: 748px;
-    padding: 0 40px;
   }
 
   .background-banner {
     width: 768px;
     background-image: url('../image/banner-tablet.jpg');
+  }
+
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+
   }
 
   .meet-partners-section {
