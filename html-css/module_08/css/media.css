@@ -2,11 +2,12 @@
 
   .container {
     width: 320px;
+
   }
 
   .background-banner {
     width: 320px;
-    min-height: 540px;
+    height: 540px;
     padding-top: 16px;
     background-image: url('../image/banner-tel.jpg');
   }
@@ -69,7 +70,7 @@
 @media (min-width: 768px) {
 
   .background-banner {
-    min-height: 700px;
+    height: 700px;
     padding-top: 28px;
   }
 
