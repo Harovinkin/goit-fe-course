@@ -1,0 +1,267 @@
+
+/*  FONTS */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* GENERAL */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.background-banner {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.link-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button {
+  height: 40px;
+  padding: 0;
+  font-size: 14px;
+  border: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+.link-button:hover,
+.find-partners-button:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.meet-partner-link:hover {
+  text-decoration: none;
+}
+
+
+/* HEADER */
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.link-button-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-button-item {
+}
+
+.log-in-button,
+.sign-up-button {
+  padding: 0 17px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.log-in-button:hover,
+.sign-up-button:hover,
+.log-in-button:focus,
+.sign-up-button:focus {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+
+/* BANNER-PROMO-CONTENT */
+
+.promo-title {
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-subtitle {
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.promo-content-section .row > [class*='col-'] {
+padding-left: 0;
+padding-right: 0;
+}
+
+.find-partners-button {
+  background-color: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
+}
+
+
+/* MAIN-MEET-PARTNERS */
+
+.meet-partners-section {
+  text-align: center;
+}
+
+.meet-partners-title {
+  margin: 0;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.meet-partner-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.meet-partner-image-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.meet-partner-image-wrapper::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 37px;
+  height: 36px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tvset::after {
+  background-image: url('../image/icons/tvset.png');
+  background-color: rgb(255, 78, 80);
+}
+
+.icon-bottle::after {
+  background-image: url('../image/icons/bottle.png');
+  background-color: rgb(255, 165, 7);
+}
+
+.icon-cup::after {
+  background-image: url('../image/icons/cup.png');
+  background-color: rgb(28, 215, 173);
+}
+
+.icon-aircraft::after {
+  background-image: url('../image/icons/aircraft.png');
+  background-color: rgb(78, 115, 219);  
+}
+
+.meet-partner-name {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+}
+
+.meet-partner-about {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
+
+.see-other-button {
+  border-color: rgb(255, 78, 80);
+  background-color: transparent;
+  font-weight: 700;
+  color: rgb(255, 78, 80);
+  cursor: pointer;
+}
