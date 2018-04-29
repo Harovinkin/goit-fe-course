@@ -3,6 +3,7 @@
 
   .background-banner {
     min-height: 540px;
+    padding-top: 18px;
     margin-bottom: 66px;
     background-image: url('../image/banner-tel.jpg');
   }
@@ -21,7 +22,6 @@
 
   .link-button-list {
     justify-content: center;
-    padding-top: 18px;
   }
  
   .header .container > .row > [class*="col-"]:last-child {
@@ -31,14 +31,19 @@
 
   /* BANNER-PROMO-CONTENT */
 
-  .promo-title {
+  .promo-content-section .row:first-child {
     margin-bottom: 10px;
+  }
+
+  .promo-title {
     font-size: 30px;
   }
 
-  .promo-subtitle {
-    max-width: 222px;
+  .promo-content-section .row:nth-child(2) {
     margin-bottom: 16px;
+  }
+
+  .promo-subtitle {
     font-size: 18px;
   }
   
@@ -114,7 +119,7 @@
 
     /* MAIN-MEET-PARTNERS */
 
-  .meet-partners-section .row:first-child {
+  .meet-partners-section .container > .row:first-child {
     margin-bottom: 34px;
   }
 
