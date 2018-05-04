@@ -1,0 +1,29 @@
+
+/* servises */
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .servises-card__icon--alarm::before {
+    background-image: url('../image/icon-servises/alarm@2x.png');
+  }
+  
+  .servises-card__icon--graph::before {
+    background-image: url('../image/icon-servises/graph@2x.png');
+  }
+  
+  .servises-card__icon--computer::before {
+    background-image: url('../image/icon-servises/computer@2x.png');
+  }
+  
+  .servises-card__icon--book::before {
+    background-image: url('../image/icon-servises/book@2x.png');
+  }
+  
+  .servises-card__icon--home::before {
+    background-image: url('../image/icon-servises/home@2x.png');
+  }
+  
+  .servises-card__icon--image::before {
+    background-image: url('../image/icon-servises/image@2x.png');
+  }
+}
