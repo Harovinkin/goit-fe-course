@@ -50,18 +50,16 @@
 }
 
 
-/* COMMON */
+/* GLOBAL */
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
@@ -84,9 +82,7 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -110,11 +106,8 @@ body {
 }
 
 .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -166,28 +159,6 @@ body {
   padding-top: 23px;
   margin-bottom: 44px;
   background-image:
-    -webkit-gradient(
-      linear, 
-    left bottom, left top, 
-    from(rgba(252,227,138, .9)), 
-    to(rgba(243,129,129, .9))
-    ),
-    url('../image/banner/banner.jpg');
-  background-image:
-    -webkit-linear-gradient(
-      bottom, 
-    rgba(252,227,138, .9) 0%, 
-    rgba(243,129,129, .9) 100%
-    ),
-    url('../image/banner/banner.jpg');
-  background-image:
-    -o-linear-gradient(
-      bottom, 
-    rgba(252,227,138, .9) 0%, 
-    rgba(243,129,129, .9) 100%
-    ),
-    url('../image/banner/banner.jpg');
-  background-image:
     linear-gradient(
       to top, 
     rgba(252,227,138, .9) 0%, 
@@ -208,12 +179,8 @@ body {
 /* NAV-SECTION */
 
 .page-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 /* LOGO */
@@ -230,9 +197,7 @@ color: #ffffff;
 /* SITE-MENU */
 
 .site-menu {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-left: auto;
 }
 
@@ -254,16 +219,12 @@ color: #ffffff;
   position: absolute;
   top: 100%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   display: block;
   width: 0%;
   height: 3px;
   background-color: rgb(252, 227, 138);
   opacity: 0;
-  -webkit-transition: opacity linear, width linear, 200ms;
-  -o-transition: opacity linear, width linear, 200ms;
   transition: opacity linear, width linear, 200ms;
 }
 
@@ -280,7 +241,7 @@ color: #ffffff;
 }
 
 
-/* SHOPPING-CART */
+/* CART */
 
 .shopping-cart {
   width: 18px;
@@ -360,15 +321,12 @@ color: #ffffff;
 }
 
 .servises-list {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .servises-card {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 380px;
-          flex: 0 0 380px;
+  flex: 0 0 380px;
 }
 
 .servises-card:not(:nth-last-child(-n + 3)) {
@@ -446,9 +404,7 @@ color: #ffffff;
 }
 
 .team-list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .team-card {
@@ -460,12 +416,6 @@ color: #ffffff;
   left: 0;
   top: 0;
   margin-bottom: 28px;
-  -webkit-transition: 
-    left 200ms linear,
-    top 200ms linear;
-  -o-transition: 
-    left 200ms linear,
-    top 200ms linear;
   transition: 
     left 200ms linear,
     top 200ms linear;
@@ -499,100 +449,44 @@ color: #ffffff;
 
 .overlay-card {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
   width: 380px;
   height: 470px;
-  background-image: 
-  -webkit-gradient(
-    linear,
-    left bottom, left top,
-    from(rgba(252,227,138, .9)),
-    to(rgba(243,129,129, .9))
-    );
-  background-image: 
-  -webkit-linear-gradient(
-    bottom,
-    rgba(252,227,138, .9) 0%,
-    rgba(243,129,129, .9) 100%
-    );
-  background-image: 
-  -o-linear-gradient(
-    bottom,
-    rgba(252,227,138, .9) 0%,
-    rgba(243,129,129, .9) 100%
-    );
   background-image: 
   linear-gradient(
     to top,
     rgba(252,227,138, .9) 0%,
     rgba(243,129,129, .9) 100%
     );
-  -webkit-box-shadow: 0 0 0 rgb(149, 225, 211);
-          box-shadow: 0 0 0 rgb(149, 225, 211);
+  box-shadow: 0 0 0 rgb(149, 225, 211);
   opacity: 0;
-  -webkit-transition: 
-    left 200ms linear,
-    top 200ms linear,
-    opacity 200ms linear,
-    -webkit-box-shadow 200ms linear;
-  transition: 
-    left 200ms linear,
-    top 200ms linear,
-    opacity 200ms linear,
-    -webkit-box-shadow 200ms linear;
-  -o-transition: 
-    left 200ms linear,
-    top 200ms linear,
-    box-shadow 200ms linear,
-    opacity 200ms linear;
   transition: 
     left 200ms linear,
     top 200ms linear,
     box-shadow 200ms linear,
     opacity 200ms linear;
-  transition: 
-    left 200ms linear,
-    top 200ms linear,
-    box-shadow 200ms linear,
-    opacity 200ms linear,
-    -webkit-box-shadow 200ms linear;
 }
 
 .team-card:hover .overlay-card {
   left: -10px;
   top: -10px;
-  -webkit-box-shadow: 10px 10px 0 rgb(149, 225, 211);
-          box-shadow: 10px 10px 0 rgb(149, 225, 211);
+  box-shadow: 10px 10px 0 rgb(149, 225, 211);
   opacity: 1;
 }
 
 /* OVERLAY-SOCIALS */
 
 .socials__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 56px;
   height: 56px;
   background-color: rgb(252, 227, 138);
-  -webkit-transition: background-color 200ms linear;
-  -o-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
 
@@ -634,17 +528,10 @@ color: #ffffff;
 /* FOOTER */
 
 .page-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   min-height: 60px;
   border-top: 1px solid rgb(229, 229, 229);
 }
@@ -663,8 +550,6 @@ color: #ffffff;
 /* Email FORM */
 
 .subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -675,30 +560,6 @@ color: #ffffff;
   border-right: none;
   width: 230px;
   height: 40px;
-  font-family: "Roboto";
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.2;
-  text-indent: 12px;
-}
-
-.subscribe__user-email::-webkit-input-placeholder {
-  font-family: "Roboto";
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.2;
-  text-indent: 12px;
-}
-
-.subscribe__user-email:-ms-input-placeholder {
-  font-family: "Roboto";
-  font-size: 15px;
-  font-style: italic;
-  line-height: 1.2;
-  text-indent: 12px;
-}
-
-.subscribe__user-email::-ms-input-placeholder {
   font-family: "Roboto";
   font-size: 15px;
   font-style: italic;

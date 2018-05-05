@@ -1,31 +1,9 @@
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
 
   /* BANNER */
 
   .banner {
-    background-image:
-      -webkit-gradient(
-      linear, 
-      left bottom, left top, 
-      from(rgba(252,227,138, .9)), 
-      to(rgba(243,129,129, .9))
-      ),
-      url('../image/banner/banner@2x.jpg');
-    background-image:
-      -webkit-linear-gradient(
-      bottom, 
-      rgba(252,227,138, .9) 0%, 
-      rgba(243,129,129, .9) 100%
-      ),
-      url('../image/banner/banner@2x.jpg');
-    background-image:
-      -o-linear-gradient(
-      bottom, 
-      rgba(252,227,138, .9) 0%, 
-      rgba(243,129,129, .9) 100%
-      ),
-      url('../image/banner/banner@2x.jpg');
     background-image:
       linear-gradient(
       to top, 
