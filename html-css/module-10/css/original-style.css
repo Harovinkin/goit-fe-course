@@ -180,6 +180,7 @@ body {
 
 .page-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -551,6 +552,7 @@ color: #ffffff;
 
 .subscribe {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .subscribe__user-email {
