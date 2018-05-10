@@ -158,6 +158,10 @@ body {
   fill: rgb(255, 255, 255);
 }
 
+.socials__icon {
+  fill: rgb(243, 129, 129);
+}
+
 /* BANNER */
 
 .banner {
@@ -595,10 +599,6 @@ color: #ffffff;
   -webkit-transition: background-color 200ms linear;
   -o-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
-}
-
-.socials__icon {
-  fill: rgb(243, 129, 129);
 }
 
 .socials__icon--facebook {
