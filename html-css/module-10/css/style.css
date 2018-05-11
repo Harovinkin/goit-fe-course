@@ -344,7 +344,7 @@ color: #ffffff;
   text-transform: uppercase;
 }
 
-.bunner__button {
+.bunner-button {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
@@ -717,7 +717,7 @@ color: #ffffff;
   text-indent: 12px;
 }
   
-.subscribe__button {
+.subscribe-button {
   width: 150px;
   height: 40px;
   background-color: rgb(149, 225, 211);
