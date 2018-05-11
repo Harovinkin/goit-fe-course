@@ -203,12 +203,12 @@ color: #ffffff;
 
 .site-menu {
   justify-content: space-between;
-  margin-left: auto;
 }
 
 .page-nav__site-menu {
   width: 492px;
   margin-right: 50px;
+  margin-left: auto;
 }
 
 .site-menu__link {

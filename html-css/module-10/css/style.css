@@ -239,12 +239,12 @@ color: #ffffff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: auto;
 }
 
 .page-nav__site-menu {
   width: 492px;
   margin-right: 50px;
+  margin-left: auto;
 }
 
 .site-menu__link {
