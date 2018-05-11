@@ -162,6 +162,13 @@ body {
   fill: rgb(243, 129, 129);
 }
 
+.servises-card {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 380px;
+          flex: 0 0 380px;
+}
+
 /* BANNER */
 
 .banner {
@@ -367,13 +374,6 @@ color: #ffffff;
 .servises-list {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.servises-card {
-  position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 380px;
-          flex: 0 0 380px;
 }
 
 .servises-card:not(:nth-last-child(-n + 3)) {
