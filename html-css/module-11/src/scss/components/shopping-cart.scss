@@ -1,0 +1,17 @@
+.shopping-cart {
+  @extend %link;
+  @extend %header-icon;
+  width: 18px;
+  height: 15px;
+
+  &:hover .shopping-cart__icon,
+  &:focus .shopping-cart__icon {
+    fill: $hover-element-color;
+  }
+}
+
+.shopping-cart__icon {
+  @extend %header-icon;
+  width: 100%;
+  height: 100%;
+}

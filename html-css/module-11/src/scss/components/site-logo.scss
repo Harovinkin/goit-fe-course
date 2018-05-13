@@ -1,0 +1,9 @@
+.site-logo {
+  margin: 0;
+}
+
+.site-logo__link {
+  @extend %link;
+  font-family: $main-font-stack;
+  color: $primary-white-color;
+}

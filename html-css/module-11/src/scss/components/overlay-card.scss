@@ -1,0 +1,19 @@
+.overlay-card {
+  position: absolute;
+  @include center-flex();
+  left: 0;
+  top: 0;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(
+    to top,
+    $wellow-grd-color 0%,
+    $coral-grd-color 100%
+    );
+  box-shadow: 0 0 0 $aquamarine-color;
+  opacity: 0;
+  transition: left 200ms linear,
+    top 200ms linear,
+    box-shadow 200ms linear,
+    opacity 200ms linear;
+}

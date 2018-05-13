@@ -1,0 +1,51 @@
+.banner {
+  width: 100%;
+  height: 1000px;
+  padding-top: 23px;
+  margin-bottom: 44px;
+  background-image: linear-gradient(
+      to top, 
+    $wellow-grd-color 0%, 
+    $coral-grd-color 100%
+    ),
+    url('../img/banner/banner.jpg');
+  @include bg-image();
+
+  &__section-text {
+    text-align: center;
+    color: $primary-white-color;
+  }
+
+  &__subtitle {
+    margin: 0 0 34px;
+    font-family: $contrast-font-stack;
+    @include font-settings($size:72px);
+  }
+
+  &__title {
+    margin: 0 auto 108px;
+    @include font-settings(150px, 140px, 700);
+    font-family: $main-font-stack;
+    text-transform: uppercase;
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {  
+    background-image: linear-gradient(
+      to top, 
+      $wellow-grd-color 0%, 
+      $coral-grd-color 100%
+      ),
+      url('../img/banner/banner@2x.jpg');
+  }
+}
+
+.banner-button {
+  @extend %button;
+  font-family: $main-font-stack;
+  @include font-settings($size:14px, $weight: 700);
+  text-transform: uppercase;
+  color: $primary-white-color;
+  border: 3px solid $primary-white-color;
+  width: 160px;
+  height: 40px;
+}

@@ -1,0 +1,16 @@
+.site-search{
+  @extend %button;
+  @extend %header-icon;
+  width: 18px;
+  height: 18px;
+
+  &:hover .site-search__icon,
+  &:focus .site-search__icon {
+    fill: $hover-element-color;
+  }
+}
+
+.site-search__icon {
+  width: 100%;
+  height: 100%;
+}

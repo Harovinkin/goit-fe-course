@@ -1,0 +1,105 @@
+.servises {
+  margin-bottom: 90px;
+}
+
+.servises-title {
+  margin-bottom: 62px;
+}
+
+.servises-list {
+  @extend %list;
+  justify-content: space-around;
+}
+
+.servises-card {
+  flex: 0 0 380px;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 96px;
+  }
+}
+
+.servises-card__title {
+  margin: 0 0 12px;
+  font-family: $main-font-stack;
+  @include font-settings($size:14px);
+  text-transform: uppercase;
+}
+
+.servises-card__title {
+  margin: 0 0 12px;
+  font-family: $main-font-stack;
+  @include font-settings($size:14px);
+  text-transform: uppercase;
+}
+
+.servises-card__content {
+  margin: 0;
+  @include font-settings(15px, 1.5);
+  color: $primary-font-color;
+}
+
+.servises-card__icon {
+  @extend %link;
+  position: relative;
+  color: $second-font-color;
+  padding-left: 82px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    @include bg-image($size: contain);
+  }
+
+  &--alarm::before {
+    background-image: url('../img/icon-servises/alarm.png');
+    
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../img/icon-servises/alarm@2x.png');
+    }
+  }
+
+  &--graph::before {
+    background-image: url('../img/icon-servises/graph.png');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../img/icon-servises/graph@2x.png');
+    }
+  }
+
+  &--computer::before {
+    background-image: url('../img/icon-servises/computer.png');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../img/icon-servises/computer@2x.png');
+    }
+  }
+
+  &--book::before {
+    background-image: url('../img/icon-servises/book.png');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../img/icon-servises/book@2x.png');
+    }
+  }
+
+  &--home::before {
+    background-image: url('../img/icon-servises/home.png');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../img/icon-servises/home@2x.png');
+    }
+  }
+
+  &--image::before {
+    background-image: url('../img/icon-servises/image.png');
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../img/icon-servises/image@2x.png');
+    }
+  }
+}

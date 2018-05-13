@@ -1,0 +1,39 @@
+.site-menu {
+  @extend %list;
+  justify-content: space-between;
+}
+
+.site-menu__link {
+  @extend %link;
+  position: relative;
+  font-family: $main-font-stack;
+  @include font-settings($size:14px);
+  color: $primary-white-color;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: $hover-element-color;
+    opacity: 0;
+    transition: opacity linear, width linear, 200ms;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-element-color;
+  }
+  
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    margin-top: 9px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.page-nav {
+  @include flex-wrap();
+  align-items: center;
+}
+
+.page-nav__site-menu {
+  width: 492px;
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.page-nav__shopping-cart {
+  margin-right: 42px;
+}

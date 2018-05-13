@@ -1,0 +1,58 @@
+.team-title {
+  margin-bottom: 44px;
+}
+
+.team__about {
+  width: 81%;
+  margin: 0 auto 90px;
+  @include font-settings($height: 1.4);
+  color: $primary-font-color;
+  text-align: center;
+}
+
+.team-list {
+  @extend %list;
+  justify-content: space-between;
+}
+
+.team-card {
+  position: relative;
+
+  &:hover .team-card__image {
+    left: -10px;
+    top: -10px;
+  }
+
+  &:hover .overlay-card {
+    left: -10px;
+    top: -10px;
+    box-shadow: 10px 10px 0 $aquamarine-color;
+    opacity: 1;
+  }
+}
+
+.team-card__image {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-bottom: 28px;
+  transition: left 200ms linear,
+    top 200ms linear;
+}
+
+.team-card__name {
+  margin: 0 0 10px;
+  font-family: $main-font-stack;
+  @include font-settings($size:14px);
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.team-card__occupation {
+  margin: 0;
+  @include font-settings($size:15px, $weight: 300);
+  color: $primary-font-color;
+  font-style: italic;
+  text-align: center;
+}

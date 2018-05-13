@@ -1,0 +1,19 @@
+%link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+%list {
+  @include flex-wrap();
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+

@@ -1,0 +1,7 @@
+.section__pre-title {
+  margin: 0 0 12px;
+  font-family: $contrast-font-stack;
+  @include font-settings($size:24px);
+  color: $second-font-color;
+  text-align: center;
+}
