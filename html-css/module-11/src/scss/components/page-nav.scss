@@ -1,14 +1,15 @@
 .page-nav {
   @include flex-wrap();
   align-items: center;
+
+  &__site-menu {
+    width: 492px;
+    margin-right: 50px;
+    margin-left: auto;
+  }
+  
+  &__shopping-cart {
+    margin-right: 42px;
+  }
 }
 
-.page-nav__site-menu {
-  width: 492px;
-  margin-right: 50px;
-  margin-left: auto;
-}
-
-.page-nav__shopping-cart {
-  margin-right: 42px;
-}

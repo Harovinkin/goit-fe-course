@@ -1,41 +1,42 @@
 .socials {
   @extend %list;
-}
 
-.socials__icon--facebook {
-  width: 13px;
-  height: 26px;
-}
-
-.socials__icon--twitter {
-  width: 26px;
-  height: 22px;
-}
-
-.socials__icon--pinterest {
-  width: 21px;
-  height: 26px;
-}
-
-.socials__icon--instagram {
-  width: 26px;
-  height: 26px;
-}
-
-.socials__link {
-  @include center-flex();
-  width: 56px;
-  height: 56px;
-  background-color: $hover-element-color;
-  transition: background-color 200ms linear;
-
-  &:hover .socials__icon,
-  &:focus .socials__icon {
-    fill: $primary-white-color;
+  &__icon--facebook {
+    width: 13px;
+    height: 26px;
   }
-
-  &:hover,
-  &:focus {
-    background-color: $contrast-page-color;
+  
+  &__icon--twitter {
+    width: 26px;
+    height: 22px;
+  }
+  
+  &__icon--pinterest {
+    width: 21px;
+    height: 26px;
+  }
+  
+  &__icon--instagram {
+    width: 26px;
+    height: 26px;
+  }
+  
+  &__link {
+    @include center-flex();
+    width: 56px;
+    height: 56px;
+    background-color: $hover-element-color;
+    transition: background-color 200ms linear;
+  
+    &:hover .socials__icon,
+    &:focus .socials__icon {
+      fill: $primary-white-color;
+    }
+  
+    &:hover,
+    &:focus {
+      background-color: $contrast-page-color;
+    }
   }
 }
+

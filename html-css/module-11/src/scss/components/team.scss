@@ -18,6 +18,32 @@
 .team-card {
   position: relative;
 
+  &__image {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 28px;
+    transition: left 200ms linear,
+      top 200ms linear;
+  }
+  
+  &__name {
+    margin: 0 0 10px;
+    font-family: $main-font-stack;
+    @include font-settings($size:14px);
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  &__occupation {
+    margin: 0;
+    @include font-settings($size:15px, $weight: 300);
+    color: $primary-font-color;
+    font-style: italic;
+    text-align: center;
+  }
+
   &:hover .team-card__image {
     left: -10px;
     top: -10px;
@@ -31,28 +57,3 @@
   }
 }
 
-.team-card__image {
-  position: relative;
-  left: 0;
-  top: 0;
-  margin-bottom: 28px;
-  transition: left 200ms linear,
-    top 200ms linear;
-}
-
-.team-card__name {
-  margin: 0 0 10px;
-  font-family: $main-font-stack;
-  @include font-settings($size:14px);
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.team-card__occupation {
-  margin: 0;
-  @include font-settings($size:15px, $weight: 300);
-  color: $primary-font-color;
-  font-style: italic;
-  text-align: center;
-}

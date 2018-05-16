@@ -4,14 +4,15 @@
   width: 18px;
   height: 15px;
 
+  &__icon {
+    @extend %header-icon;
+    width: 100%;
+    height: 100%;
+  }
+
   &:hover .shopping-cart__icon,
   &:focus .shopping-cart__icon {
     fill: $hover-element-color;
   }
 }
 
-.shopping-cart__icon {
-  @extend %header-icon;
-  width: 100%;
-  height: 100%;
-}

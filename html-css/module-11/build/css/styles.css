@@ -30,6 +30,12 @@
   cursor: pointer;
 }
 
+.shopping-cart,
+.shopping-cart__icon,
+.site-search {
+  fill: white;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -479,12 +485,6 @@ body {
   background-color: #f38181;
 }
 
-.shopping-cart,
-.shopping-cart__icon,
-.site-search {
-  fill: white;
-}
-
 .socials__icon {
   fill: #f38181;
 }
@@ -609,14 +609,14 @@ body {
   height: 15px;
 }
 
-.shopping-cart:hover .shopping-cart__icon,
-.shopping-cart:focus .shopping-cart__icon {
-  fill: #fce38a;
-}
-
 .shopping-cart__icon {
   width: 100%;
   height: 100%;
+}
+
+.shopping-cart:hover .shopping-cart__icon,
+.shopping-cart:focus .shopping-cart__icon {
+  fill: #fce38a;
 }
 
 .site-search {
@@ -624,14 +624,14 @@ body {
   height: 18px;
 }
 
-.site-search:hover .site-search__icon,
-.site-search:focus .site-search__icon {
-  fill: #fce38a;
-}
-
 .site-search__icon {
   width: 100%;
   height: 100%;
+}
+
+.site-search:hover .site-search__icon,
+.site-search:focus .site-search__icon {
+  fill: #fce38a;
 }
 
 .main-section {
@@ -748,18 +748,6 @@ body {
   position: relative;
 }
 
-.team-card:hover .team-card__image {
-  left: -10px;
-  top: -10px;
-}
-
-.team-card:hover .overlay-card {
-  left: -10px;
-  top: -10px;
-  box-shadow: 10px 10px 0 #95e1d3;
-  opacity: 1;
-}
-
 .team-card__image {
   position: relative;
   left: 0;
@@ -787,6 +775,18 @@ body {
   color: #999999;
   font-style: italic;
   text-align: center;
+}
+
+.team-card:hover .team-card__image {
+  left: -10px;
+  top: -10px;
+}
+
+.team-card:hover .overlay-card {
+  left: -10px;
+  top: -10px;
+  box-shadow: 10px 10px 0 #95e1d3;
+  opacity: 1;
 }
 
 .overlay-card {
