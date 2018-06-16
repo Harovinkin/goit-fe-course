@@ -8,16 +8,16 @@ const taba = 6;
 
 const userReq = prompt('Введите колличество необходимых мест');
 
-const userRegNum = Number(userReq);
+const userReqNum = Number(userReq);
 
 if (
-  Number.isNaN(userRegNum) === false &&
-  userRegNum % 1 === 0 &&
-  userRegNum > 0
+  Number.isNaN(userReqNum) === false &&
+  userReqNum % 1 === 0 &&
+  userReqNum > 0
 ) {
   let isDecision;
 
-  if (userRegNum <= taba) {
+  if (userReqNum <= taba) {
     isDecision = confirm(
       'Вы можете присоединится к группе "Taba". Согласны ли Вы?',
     );
@@ -27,7 +27,7 @@ if (
     } else {
       alert('Нам очень жаль, приходите еще!');
     }
-  } else if (userRegNum <= sharm) {
+  } else if (userReqNum <= sharm) {
     isDecision = confirm(
       'Вы можете присоединится к группе "Sharm". Согласны ли Вы?',
     );
@@ -37,7 +37,7 @@ if (
     } else {
       alert('Нам очень жаль, приходите еще!');
     }
-  } else if (userRegNum <= hurgada) {
+  } else if (userReqNum <= hurgada) {
     isDecision = confirm(
       'Вы можете присоединится к группе "Hurgada". Согласны ли Вы?',
     );
