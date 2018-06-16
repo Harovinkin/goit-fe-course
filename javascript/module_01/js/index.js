@@ -1,4 +1,4 @@
-'use srtict'
+'use srtict';
 
 const ADMIN_LOGIN = 'admin';
 
@@ -12,21 +12,18 @@ const accessYes = 'Добро пожаловать!';
 
 const userLog = prompt('Введите Логин');
 
-
 if (userLog === ADMIN_LOGIN) {
-
   const userPass = prompt('Введите Пароль');
-  
-    if (userPass === ADMIN_PASSWORD) {
-      alert( accessYes );
-    } else if (userPass === null) {
-      alert( userCancel );
-    } else {
-      alert( accessErr );
-    }
 
+  if (userPass === ADMIN_PASSWORD) {
+    alert(accessYes);
+  } else if (userPass === null) {
+    alert(userCancel);
+  } else {
+    alert(accessErr);
+  }
 } else if (userLog === null) {
-  alert( userCancel );
+  alert(userCancel);
 } else {
-  alert( accessErr );
+  alert(accessErr);
 }
