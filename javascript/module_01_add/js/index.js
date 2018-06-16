@@ -10,35 +10,39 @@ const userReq = prompt('Введите колличество необходим
 
 const userRegNum = Number(userReq);
 
-if (Number.isNaN(userRegNum) === false && userRegNum > 0) {
-  let result;
+if (
+  Number.isNaN(userRegNum) === false &&
+  userRegNum % 1 === 0 &&
+  userRegNum > 0
+) {
+  let isDecision;
 
   if (userRegNum <= taba) {
-    result = confirm(
+    isDecision = confirm(
       'Вы можете присоединится к группе "Taba". Согласны ли Вы?',
     );
 
-    if (result === true) {
+    if (isDecision) {
       alert('Приятного путешествия в группе "Taba"');
     } else {
       alert('Нам очень жаль, приходите еще!');
     }
   } else if (userRegNum <= sharm) {
-    result = confirm(
+    isDecision = confirm(
       'Вы можете присоединится к группе "Sharm". Согласны ли Вы?',
     );
 
-    if (result === true) {
+    if (isDecision) {
       alert('Приятного путешествия в группе "Sharm"');
     } else {
       alert('Нам очень жаль, приходите еще!');
     }
   } else if (userRegNum <= hurgada) {
-    result = confirm(
+    isDecision = confirm(
       'Вы можете присоединится к группе "Hurgada". Согласны ли Вы?',
     );
 
-    if (result === true) {
+    if (isDecision) {
       alert('Приятного путешествия в группе "Hurgada"');
     } else {
       alert('Нам очень жаль, приходите еще!');
