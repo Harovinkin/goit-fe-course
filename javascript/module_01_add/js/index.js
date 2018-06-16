@@ -8,7 +8,7 @@ const taba = 6;
 
 const userReq = prompt('Введите колличество необходимых мест');
 
-const userReqNum = Number(userReq);
+const userReqNum = Number.parseFloat(userReq);
 
 if (
   Number.isNaN(userReqNum) === false &&
