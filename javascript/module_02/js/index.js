@@ -9,20 +9,14 @@ do {
 
   let userInputNum = Number(userInput);
 
-  if (userInput !== null) {
-    if (Number.isNaN(userInputNum) === false) {
-      numbers.push(userInputNum);
-    } else {
-      alert('Было введено не число, попробуйте еще раз :)');
-    }
+  if (Number.isNaN(userInputNum) === false) {
+    numbers.push(userInputNum);
   } else {
-    break;
+    alert('Было введено не число, попробуйте еще раз :)');
   }
-} while (true);
+} while (userInput !== null);
 
 for (const value of numbers) {
-  if (numbers[0] !== 0) {
-    total += value;
-  }
+  total += value;
 }
 alert(`Общая сумма чисел равна: ${total}`);
