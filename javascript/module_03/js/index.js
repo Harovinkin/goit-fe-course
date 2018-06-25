@@ -24,8 +24,10 @@ function addLogin(logins, login) {
 
     if (isLoginValidity) {
       const isLoginExists = checkIfLoginExists(logins, login);
+
       if (!isLoginExists) {
         logins.push(login);
+
         return 'Логин успешно добавлен!';
       } else {
         return 'Такой логин уже используется!';
