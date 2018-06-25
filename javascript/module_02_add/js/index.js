@@ -19,6 +19,7 @@ out: do {
     if (attempts > 0) {
       alert(`"Неверный пароль, у вас осталось ${attempts} попыток"`);
     } else {
+      alert("У вас закончились попытки, аккаунт заблокирован!");
       break out;
     }
 
@@ -27,4 +28,6 @@ out: do {
   }
   
 } while (attempts);
+
+
 
