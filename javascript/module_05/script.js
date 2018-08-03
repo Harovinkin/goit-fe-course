@@ -152,12 +152,7 @@ console.log(getUserByEmail(users, 'elmahead@omatom.com')); // {объект по
  * Получить массив пользователей попадающих в возрастную категорию от min до max лет (поле age)
  */
 const getUsersWithAge = (arr, min, max) => 
-  arr.filter(user => {
-    
-    if (user.age > min && user.age < max) {
-      return user;
-  };
-});
+  arr.filter(user => user.age > min && user.age < max);
 
 console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
                                             
@@ -178,15 +173,15 @@ console.log(getTotalBalance(users)); // 20916
 /**
  * Массив имен всех пользователей у которых есть друг с указанным именем
  */
-const getUsersByFriend = (arr, name) => 
-  arr.reduce((acc, user) => {
+const getUsersByFriend = (arr, name) => arr.filter(user => user["friends"].includes(name));
+//   arr.reduce((acc, user) => {
 
-    if (user["friends"].includes(name)) {
-      acc.push(user.name);
-    }
+//     if (user["friends"].includes(name)) {
+//       acc.push(user.name);
+//     }
 
-  return acc;
-}, []);
+//   return acc;
+// }, []);
 
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
