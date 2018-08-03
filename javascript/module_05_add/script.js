@@ -105,14 +105,15 @@ const users = [
 */
 const getAllSkills = arr => arr
   .reduce((allSkills, user) => allSkills.concat(user.skills), [])
-  .reduce((uniqSkills, skill) => {
+  // .reduce((uniqSkills, skill) => {
 
-    if (!uniqSkills.includes(skill)) {
-      uniqSkills.push(skill);
-    }
+  //   if (!uniqSkills.includes(skill)) {
+  //     uniqSkills.push(skill);
+  //   }
 
-    return uniqSkills;
-  }, [])
+  //   return uniqSkills;
+  // }, [])
+  .filter((skill, idx, skills) => skills.indexOf(skill) === idx)
   .sort();
 
 console.log(getAllSkills(users));
@@ -123,7 +124,7 @@ console.log(getAllSkills(users));
 * Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
 */
 const getUserNamesSortedByFriendsCount = arr => arr
-  .map(user => ({...user, friends: user["friends"].length}))
+  // .map(user => ({...user, friends: user["friends"].length}))
 
   .sort((prev, next) => prev.friends - next.friends)
 
