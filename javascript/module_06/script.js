@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 /*
   Сеть фастфудов предлагает несколько видов гамбургеров.
   Основа (булочка) гамбургера может быть большой или маленькой (обязательно):
@@ -21,62 +21,61 @@
  * Класс, объекты которого описывают параметры гамбургера.
  */
 class Hamburger {
-
   constructor(size, stuffing) {
     this._size = size;
     this._stuffing = stuffing;
     this._toppings = [];
   }
 
-  get size () {
+  get size() {
     return this._size;
   }
 
-  set size (value) {
+  set size(value) {
     this._size = value;
   }
 
-  get stuffing () {
+  get stuffing() {
     return this._stuffing;
   }
 
-  set stuffing (value) {
+  set stuffing(value) {
     this._stuffing = value;
   }
 
-  get toppings () {
+  get toppings() {
     return this._toppings;
   }
 
-  set toppings (arr) {
+  set toppings(arr) {
     this._toppings = arr;
   }
 
-  static get SIZE_SMALL () {
+  static get SIZE_SMALL() {
     return 'SIZE_SMALL';
   }
-  static get SIZE_LARGE () {
+  static get SIZE_LARGE() {
     return 'SIZE_LARGE';
   }
 
-  static get STUFFING_CHEESE () {
+  static get STUFFING_CHEESE() {
     return 'STUFFING_CHEESE';
   }
-  static get STUFFING_SALAD () {
+  static get STUFFING_SALAD() {
     return 'STUFFING_SALAD';
   }
-  static get STUFFING_MEAT () {
+  static get STUFFING_MEAT() {
     return 'STUFFING_MEAT';
   }
 
-  static get TOPPING_SPICE () {
+  static get TOPPING_SPICE() {
     return 'TOPPING_SPICE';
   }
-  static get TOPPING_SAUCE () {
+  static get TOPPING_SAUCE() {
     return 'TOPPING_SAUCE';
   }
 
-    /**
+  /**
    * Добавить topping к гамбургеру. Можно добавить несколько topping, при условии, что они разные.
    * @param {String} topping - Тип добавки
    */
@@ -93,7 +92,7 @@ class Hamburger {
     this.toppings = this.toppings.filter(item => topping !== item);
   }
 
-    /**
+  /**
    * Получить список toppings
    * @returns {Array} - Массив добавленных topping, содержит значения констант Hamburger.TOPPING_*
    *
@@ -103,7 +102,7 @@ class Hamburger {
     return this.toppings;
   }
 
-    /**
+  /**
    * Узнать размер гамбургера
    * @returns {String} - размер гамбургера
    *
@@ -113,7 +112,7 @@ class Hamburger {
     return this.size;
   }
 
-    /**
+  /**
    * Узнать начинку гамбургера
    * @returns {String} - начинка гамбургера
    *
@@ -123,29 +122,31 @@ class Hamburger {
     return this.stuffing;
   }
 
-  get price () {
-    let getToppingPrice = this.toppings.reduce((acc, item) => 
-      acc += Hamburger.TOPPINGS[item].price
-      , 0);
+  get price() {
+    const getToppingPrice = this.toppings.reduce(
+      (acc, item) => (acc += Hamburger.TOPPINGS[item].price),
+      0,
+    );
 
     const getSizePrice = Hamburger.SIZES[this.size].price;
-    const detStuffPrice = Hamburger.STUFFINGS[this.stuffing].price;
+    const getStuffPrice = Hamburger.STUFFINGS[this.stuffing].price;
 
-    return getToppingPrice + getSizePrice + detStuffPrice;
- }
+    return getToppingPrice + getSizePrice + getStuffPrice;
+  }
 
- get calories () {
-    let getToppingCal = this.toppings.reduce((acc, item) => 
-      acc += Hamburger.TOPPINGS[item].calories
-      , 0);
+  get calories() {
+    const getToppingCal = this.toppings.reduce(
+      (acc, item) => (acc += Hamburger.TOPPINGS[item].calories),
+      0,
+    );
 
-  const getSizeCal = Hamburger.SIZES[this.size].calories;
-  const detStuffCal = Hamburger.STUFFINGS[this.stuffing].calories;
+    const getSizeCal = Hamburger.SIZES[this.size].calories;
+    const getStuffCal = Hamburger.STUFFINGS[this.stuffing].calories;
 
-  return getToppingCal + getSizeCal + detStuffCal;
-}
+    return getToppingCal + getSizeCal + getStuffCal;
+  }
 
-    /**
+  /**
    * Узнать цену гамбургера
    * @returns {Number} - Цена в деньгах
    *
@@ -211,31 +212,37 @@ Hamburger.TOPPINGS = {
 /* Вот как может выглядеть использование этого класса */
 
 // Маленький гамбургер с начинкой из сыра
-const hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
+const hamburger = new Hamburger(
+  Hamburger.SIZE_SMALL,
+  Hamburger.STUFFING_CHEESE,
+);
 
 // Добавка из приправы
 hamburger.addTopping(Hamburger.TOPPING_SPICE);
 
 // Спросим сколько там калорий
-console.log("Calories: ", hamburger.calculateCalories());
+console.log('Calories: ', hamburger.calculateCalories());
 
 // Сколько стоит?
-console.log("Price: ", hamburger.calculatePrice());
+console.log('Price: ', hamburger.calculatePrice());
 
 // Я тут передумал и решил добавить еще соус
 hamburger.addTopping(Hamburger.TOPPING_SAUCE);
 
 // А сколько теперь стоит?
-console.log("Price with sauce: ", hamburger.calculatePrice());
+console.log('Price with sauce: ', hamburger.calculatePrice());
 
 // Проверить, большой ли гамбургер?
-console.log("Is hamburger large: ", hamburger.getSize() === Hamburger.SIZE_LARGE); // -> false
+console.log(
+  'Is hamburger large: ',
+  hamburger.getSize() === Hamburger.SIZE_LARGE,
+); // -> false
 
 // Убрать добавку
 hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 
 // Смотрим сколько добавок
-console.log("Hamburger has %d toppings", hamburger.getToppings().length); // 1
+console.log('Hamburger has %d toppings', hamburger.getToppings().length); // 1
 
 /*
   🔔 Обратите внимание на такие моменты:
