@@ -19,4 +19,5 @@ do {
 for (const value of numbers) {
   total += value;
 }
+
 alert(`Общая сумма чисел равна: ${total}`);
