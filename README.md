@@ -1,6 +1,6 @@
-# goit-fe-course
+# Goit-Fe-Course
 
-## html & css
+##  HTML & CSS
 * **git clone** - Клонує репозиторій
 * **git pull** - Стягує оновлення з репозиторію
 * **git push** - Записує оновлення коду на віддалений репозиторій
